@@ -1,0 +1,95 @@
+.menu {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background: url("../images/bg.jpg");
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.menu-icerik {
+  display: inline-block;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.4s;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.menu-icerik a:hover,
+.menu-icerik a:focus {
+  color: var(--dark);
+}
+.zemin .kapatBtn {
+  position: absolute;
+  top: 64px;
+  left: 40px;
+  font-size: 3rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+  justify-self: center;
+  color: #fff;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+  }
+}
+
+.main-container .iconnav {
+  justify-self: start;
+  margin: 4rem;
+}
+
+@media (max-width: 768px) {
+  .main-container .iconnav {
+    display: none;
+  }
+
+  .main-container .mainlog {
+    justify-items: center;
+  }
+}
+
+.main-logo {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
